@@ -1,0 +1,22 @@
+:root {
+--primary-color: #004d99;
+--secondary-color: #f2f2f2;
+--text-color: #333333;
+--heading-font: 'Poppins', sans-serif;
+--body-font: 'Open Sans', sans-serif;
+}
+
+body {
+font-family: var(--body-font);
+color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--heading-font);
+color: var(--primary-color);
+}
+
+/* Add a general background color */
+html {
+background-color: var(--secondary-color);
+}
