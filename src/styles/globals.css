@@ -1,29 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+:root {
+--color-primary: #0D0D0D;
+--color-secondary: #F7F7F7;
+--color-accent: #D13F3F;
+--color-highlight: #B52A2A;
+--color-text-primary: #1A1A1A;
+--color-text-on-dark: #FAFAFA;
+--color-neutral: #FFFFFF;
+--color-success: #2E7D32;
 
-/* src/styles/globals.css */
+--font-heading: 'Poppins', sans-serif;
+--font-body: 'Open Sans', sans-serif;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+--font-size-base:16px;
+--font-size-mobile:14px;
+}
 
 body {
-font-family: 'Open Sans', sans-serif;
+font-family: var(--font-body);
+font-size: var(--font-size-base);
 color: var(--color-text-primary);
 background-color: var(--color-secondary);
+line-height:1.5;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-font-family: 'Poppins', sans-serif;
-color: var(--color-text-on-dark);
+* {
+box-sizing: border-box;
 }
 
-/* Links */
-a {
-color: var(--color-accent);
-text-decoration: none;
+html {
+scroll-behavior: smooth;
 }
 
-a:hover {
-text-decoration: underline;
+
+@media (max-width:768px) {
+body {
+font-size: var(--font-size-mobile);
+}
 }
