@@ -4,24 +4,23 @@ import Link from 'next/link';
 const Header = () => {
 return (
 <header className="header">
-<div className="container">
-<div className="navbar">
+<nav className="navbar">
 <div className="logo">
 <i className="fas fa-razor"></i>
 <span>Snipe Professional</span>
 </div>
-<nav className="nav-menu">
-<Link href="#">Home</Link>
-<Link href="#products">Products</Link>
-<Link href="#brands">Brands</Link>
-<Link href="#advantages">Advantages</Link>
-<Link href="#subscribe">Subscribe</Link>
-</nav>
+<ul className="nav-menu">
+<li><Link href="#"><a>Home</a></Link></li>
+<li><Link href="#products"><a>Products</a></Link></li>
+<li><Link href="#brands"><a>Brands</a></Link></li>
+<li><Link href="#"><a>About</a></Link></li>
+<li><Link href="#"><a>Contact</a></Link></li>
+</ul>
 <div className="nav-actions">
-<Link href="#cart"><i className="fas fa-shopping-cart"></i></Link>
+<a href="#">Login</a>
+<a href="#">Cart</a>
 </div>
-</div>
-</div>
+</nav>
 </header>
 );
 };
