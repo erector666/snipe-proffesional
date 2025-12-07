@@ -2,18 +2,30 @@ import React from 'react';
 
 export const Header: React.FC = () => {
 return (
-<header className="bg-[#1a1a1a] p-4">
-<div className="container mx-auto flex items-center justify-between">
-<a href="/" className="text-2xl font-bold text-[#d4af7a]">Snipe Professional</a>
-<nav>
-<ul className="flex space-x-6">
-<li><a href="#" className="text-[#d4af7a] hover:underline">Products</a></li>
-<li><a href="#" className="text-[#d4af7a] hover:underline">Services</a></li>
-<li><a href="#" className="text-[#d4af7a] hover:underline">About</a></li>
-<li><a href="#" className="text-[#d4af7a] hover:underline">Contact</a></li>
+<header className="header">
+<nav className="navbar container">
+<a href="#" className="logo">
+<i className="fas fa-cut"></i>
+<span>Snipe Professional</span>
+</a>
+<ul className="nav-menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#brands">Brands</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
-</nav>
+<div className="nav-actions">
+<a href="#search"><i className="fas fa-search"></i></a>
+<a href="#account"><i className="fas fa-user"></i></a>
+<a href="#cart"><i className="fas fa-shopping-cart"></i><span className="cart-count">0</span></a>
 </div>
+<div className="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</nav>
 </header>
 );
 };

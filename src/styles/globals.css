@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
 /* src/styles/globals.css */
 
 @tailwind base;
@@ -5,40 +7,23 @@
 @tailwind utilities;
 
 body {
-font-family: Roboto, sans-serif;
-color: #ffffff;
-background-color: #1a1a1a;
+font-family: 'Open Sans', sans-serif;
+color: var(--color-text-primary);
+background-color: var(--color-secondary);
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-font-family: Poppins, sans-serif;
-color: #d4af7a;
+font-family: 'Poppins', sans-serif;
+color: var(--color-text-on-dark);
 }
 
 /* Links */
 a {
-color: #d4af7a;
+color: var(--color-accent);
 text-decoration: none;
 }
 
 a:hover {
 text-decoration: underline;
 }
-
-/* Button default styles */
-.button {
-background-color: #d4af7a;
-color: #1a1a1a;
-padding:10px20px;
-border-radius:5px;
-font-size:16px;
-cursor: pointer;
-border: none;
-}
-
-.button:hover {
-opacity:0.8;
-}
-
-/* Add more global styles as needed */
