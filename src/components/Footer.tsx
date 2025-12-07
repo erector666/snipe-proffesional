@@ -2,8 +2,10 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
 return (
-<footer style={{ backgroundColor: '#004d99', color: 'white', padding: '10px', textAlign: 'center', fontFamily: 'var(--heading-font)' }}>
-<p>&copy; {new Date().getFullYear()} Snipe-IT</p>
+<footer className="bg-[#1a1a1a] p-4">
+<div className="container mx-auto text-center">
+<p className="text-[#d4af7a]">© {new Date().getFullYear()} Snipe Professional. All rights reserved.</p>
+</div>
 </footer>
 );
 };

@@ -1,22 +1,44 @@
-:root {
---primary-color: #004d99;
---secondary-color: #f2f2f2;
---text-color: #333333;
---heading-font: 'Poppins', sans-serif;
---body-font: 'Open Sans', sans-serif;
-}
+/* src/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-font-family: var(--body-font);
-color: var(--text-color);
+font-family: Roboto, sans-serif;
+color: #ffffff;
+background-color: #1a1a1a;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-font-family: var(--heading-font);
-color: var(--primary-color);
+font-family: Poppins, sans-serif;
+color: #d4af7a;
 }
 
-/* Add a general background color */
-html {
-background-color: var(--secondary-color);
+/* Links */
+a {
+color: #d4af7a;
+text-decoration: none;
 }
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Button default styles */
+.button {
+background-color: #d4af7a;
+color: #1a1a1a;
+padding:10px20px;
+border-radius:5px;
+font-size:16px;
+cursor: pointer;
+border: none;
+}
+
+.button:hover {
+opacity:0.8;
+}
+
+/* Add more global styles as needed */
